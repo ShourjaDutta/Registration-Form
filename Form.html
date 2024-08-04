@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form id="googleForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="">Select</option>
+                <option value="UG">Undergraduate</option>
+                <option value="G">Graduate</option>
+                <option value="PG">Postgraduate</option>
+            </select>
+
+            <label>Gender:</label>
+            <input type="radio" id="genderMale" name="gender" value="male" required>
+            <label for="genderMale">Male</label>
+            <input type="radio" id="genderFemale" name="gender" value="female" required>
+            <label for="genderFemale">Female</label>
+            <input type="radio" id="genderOther" name="gender" value="other" required>
+            <label for="genderOther">Other</label>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
